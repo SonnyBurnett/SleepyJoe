@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar", "0:03"));
         mJoeObjects.add(new JoeObject(R.drawable.joe6,R.raw.joe6, "World War II", "0:21"));
         mJoeObjects.add(new JoeObject(R.drawable.joe7,R.raw.joe7, "Get it to people", "0:06"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe8,R.raw.joe8, "Telephone", "0:08"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe9,R.raw.joe9, "Covid19", "0:13"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe8,R.raw.joe8, "Telephone or camera", "0:08"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe9,R.raw.joe9, "Covid19 the whole thing", "0:13"));
         mJoeObjects.add(new JoeObject(R.drawable.joe10,R.raw.joe10, "Take a test", "0:05"));
         mJoeObjects.add(new JoeObject(R.drawable.joe11,R.raw.joe11, "Never ever", "0:22"));
         mJoeObjects.add(new JoeObject(R.drawable.joe12,R.raw.joe14, "No intercourse", "0:23"));
