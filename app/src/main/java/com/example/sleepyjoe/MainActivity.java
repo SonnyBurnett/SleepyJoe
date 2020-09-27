@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -33,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         mRecyclerView.setLayoutManager(layoutManager);
+
+        mAdapter.setOnItemClickListener(new JoeObjectAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                final MediaPlayer joePlayer = MediaPlayer.create(getApplicationContext(), mJoeObjects.get(position).getmJoeSound());
+                joePlayer.start();
+            }
+        });
     }
 
     private void initJoe() {

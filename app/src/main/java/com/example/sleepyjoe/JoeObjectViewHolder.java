@@ -24,12 +24,24 @@ public class JoeObjectViewHolder extends RecyclerView.ViewHolder {
 
     public View view;
 
-    public JoeObjectViewHolder(View itemView) {
+    public JoeObjectViewHolder(View itemView, final JoeObjectAdapter.OnItemClickListener listener) {
         super(itemView);
         JoeTitle1 = itemView.findViewById(R.id.firstLine);
         JoeTitle2 = itemView.findViewById(R.id.secondLine);
         JoePicture = itemView.findViewById(R.id.icon);
         view = itemView;
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (listener != null) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION) {
+                        listener.onItemClick(position);
+                    }
+                }
+            }
+        });
     }
 
 }

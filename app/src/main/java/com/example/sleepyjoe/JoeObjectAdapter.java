@@ -24,6 +24,7 @@ public class JoeObjectAdapter extends RecyclerView.Adapter<JoeObjectViewHolder> 
 
     private Context context;
     public List<JoeObject> listJoeObject;
+    private OnItemClickListener mListener;
 
     //
     // Constructor, this is where the initial data is passed to the adapter
@@ -33,10 +34,20 @@ public class JoeObjectAdapter extends RecyclerView.Adapter<JoeObjectViewHolder> 
         this.listJoeObject = listJoeObject;
     }
 
+    // Make the items clickable with a clicklistener
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
+
     @Override
     public JoeObjectViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.row_layout, parent, false);
-        return new JoeObjectViewHolder(v);
+        return new JoeObjectViewHolder(v, mListener);
     }
 
     @Override
