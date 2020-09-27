@@ -45,21 +45,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initJoe() {
-        mJoeObjects.add(new JoeObject(R.drawable.joe2,R.raw.joe2, "The thing", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe3,R.raw.joe3, "Senate", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe4,R.raw.joe4, "Poor kids", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe2,R.raw.joe2, "The thing2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe3,R.raw.joe3, "Senate2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe4,R.raw.joe4, "Poor kids2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe2,R.raw.joe2, "The thing", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe3,R.raw.joe3, "Senate", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe4,R.raw.joe4, "Poor kids", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe2,R.raw.joe2, "The thing2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe3,R.raw.joe3, "Senate2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe4,R.raw.joe4, "Poor kids2", "Joe Biden"));
-        mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar2", "Joe Biden"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe15,R.raw.joe1, "Why Why Why", "0:05"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe2,R.raw.joe2, "The thing", "0:02"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe3,R.raw.joe3, "Poor kids", "0:03"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe4,R.raw.joe4, "Senate", "0:04"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe5,R.raw.joe5, "Liar", "0:03"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe6,R.raw.joe6, "World War II", "0:21"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe7,R.raw.joe7, "Get it to people", "0:06"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe8,R.raw.joe8, "Telephone", "0:08"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe9,R.raw.joe9, "Covid19", "0:13"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe10,R.raw.joe10, "Take a test", "0:05"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe11,R.raw.joe11, "Never ever", "0:22"));
+        mJoeObjects.add(new JoeObject(R.drawable.joe12,R.raw.joe14, "No intercourse", "0:23"));
+
     }
 }
